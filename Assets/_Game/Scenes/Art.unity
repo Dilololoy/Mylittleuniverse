@@ -3189,9 +3189,17 @@ PrefabInstance:
       value: Stickman
       objectReference: {fileID: 0}
     - target: {fileID: 6585190806278745987, guid: 40511626e2e3946e1ada07595786ac0d, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585190806278745987, guid: 40511626e2e3946e1ada07595786ac0d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b2dfddc69b2b343bdaa7d7d5885e297c, type: 2}
+    - target: {fileID: 6585190806278745987, guid: 40511626e2e3946e1ada07595786ac0d, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e30ddf83c6c434bf9ab54bd2c61b7377, type: 2}
     - target: {fileID: 6793442481518193682, guid: 40511626e2e3946e1ada07595786ac0d, type: 3}
       propertyPath: m_RootOrder
       value: 1
