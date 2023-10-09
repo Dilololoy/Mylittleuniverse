@@ -21,25 +21,23 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Atlas
-  m_Shader: {fileID: 4800000, guid: 37639dc9dfcb02e418de063aa605d992, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: edd7abf643fa4bc4e8561d4c280c97cf, type: 3}
   m_ValidKeywords:
-  - CURVEDWORLD_BEND_TYPE_LITTLEPLANET_X
-  - _ALPHAPREMULTIPLY_ON
-  - _ALPHATEST_ON
-  - _SURFACE_TYPE_TRANSPARENT
-  m_InvalidKeywords:
-  - CURVEDWORLD_BEND_ID_1
   - TCP2_REFLECTIONS_FRESNEL
   - TCP2_RIM_LIGHTING
   - TCP2_RIM_LIGHTING_LIGHTMASK
   - TCP2_SHADOW_LIGHT_COLOR
+  m_InvalidKeywords:
+  - CURVEDWORLD_BEND_ID_1
+  - CURVEDWORLD_BEND_TYPE_LITTLEPLANET_X
+  - TCP2_DISABLE_WRAPPED_LIGHT
   - TCP2_UV_NORMALS_FULL
+  - _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses:
   - SRPDEFAULTUNLIT
   - DepthOnly
@@ -154,8 +152,9 @@ Material:
     - _DetailMapImpact: 0
     - _DetailNormalMapScale: 1
     - _DirectIntensityOutline: 1
-    - _DstBlend: 10
+    - _DstBlend: 0
     - _EmissionChannel: 4
+    - _EnableOutline: 0
     - _EnvironmentReflections: 1
     - _FlatRimEdgeSmoothness: 0.172
     - _FlatRimLightAlign: 0.534
@@ -206,17 +205,20 @@ Material:
     - _RampBandsSmoothing: 0.1
     - _RampOffset: 0
     - _RampScale: 1
-    - _RampSmoothing: 0.726
-    - _RampThreshold: 0.461
+    - _RampSmooth: 0.2
+    - _RampSmoothAdd: 0.75
+    - _RampSmoothing: 0.771
+    - _RampThreshold: 0.748
     - _RampType: 0
     - _ReceiveShadows: 1
     - _ReceiveShadowsOff: 1
     - _ReflectionMapType: 0
     - _ReflectionSmoothness: 0.5
-    - _RenderingMode: 2
+    - _RenderingMode: 0
     - _RimEnabled: 1
-    - _RimMax: 1.65
-    - _RimMin: 0.42
+    - _RimMax: 1.76
+    - _RimMin: 0.83
+    - _RimStrength: 0.5
     - _SelfShadingSize: 0.485
     - _SelfShadingSizeExtra: 0.563
     - _ShadowColorLightAtten: 1
@@ -225,6 +227,8 @@ Material:
     - _SingleIndirectColor: 0
     - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
+    - _SpecBlend: 1
+    - _SpecSmooth: 1
     - _SpecularEnabled: 1
     - _SpecularHighlights: 1
     - _SpecularMapType: 0
@@ -234,6 +238,10 @@ Material:
     - _SpecularType: 0
     - _SrcBlend: 1
     - _Surface: 1
+    - _TCP2_DISABLE_WRAPPED_LIGHT: 1
+    - _TCP2_RAMPTEXT: 0
+    - _TCP2_SPEC_TOON: 0
+    - _TCP2_STYLIZED_FRESNEL: 0
     - _TextureBlendingMode: 0
     - _TextureImpact: 0.656
     - _UVSec: 0
@@ -257,9 +265,9 @@ Material:
     - _UseSpecular: 0
     - _VertexColorsEnabled: 0
     - _WorkflowMode: 1
-    - _ZWrite: 0
+    - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.8522013, g: 1, b: 0.7783019, a: 1}
+    - _BaseColor: {r: 1, g: 0.9929245, b: 0.9575472, a: 1}
     - _Color: {r: 0.8522013, g: 1, b: 0.7783019, a: 1}
     - _ColorDim: {r: 0.3962264, g: 0.25605196, b: 0.272784, a: 1}
     - _ColorDimCurve: {r: 0.85023, g: 0.85034, b: 0.8504499, a: 0.85056}
@@ -271,13 +279,13 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FlatRimColor: {r: 0.09700961, g: 0.18867922, b: 0.10415179, a: 1}
     - _FlatSpecularColor: {r: 0.48024642, g: 0.8207547, b: 0.40650585, a: 1}
-    - _HColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HColor: {r: 0.8113208, g: 0.70959276, b: 0.5778747, a: 1}
     - _LightmapDirection: {r: 0, g: 1, b: 0, a: 0}
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _ReflectionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 0.049928807, g: 0.6226415, b: 0.5769346, a: 0.5}
-    - _SColor: {r: 0.0082769515, g: 0.15243413, b: 0.5849056, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _SColor: {r: 0.4811321, g: 0.31102777, b: 0.2519135, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
     - _UnityShadowColor: {r: 1, g: 1, b: 1, a: 1}
